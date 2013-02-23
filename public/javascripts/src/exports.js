@@ -1,0 +1,5 @@
+/**
+ * Export
+ */
+
+self['Gadget']=Gadget;

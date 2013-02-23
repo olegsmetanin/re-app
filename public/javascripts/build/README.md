@@ -1,0 +1,1 @@
+Place compiler.jar from http://closure-compiler.googlecode.com/files/compiler-latest.zip here

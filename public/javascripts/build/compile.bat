@@ -1,0 +1,1 @@
+java -jar compiler.jar --compilation_level ADVANCED_OPTIMIZATIONS --js ../app.test.js --externs ../src/core/externs_closure.js --property_map_output_file property_map_output.txt --property_map_input_file property_map_input.txt --js_output_file ../app.min.js

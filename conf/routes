@@ -1,0 +1,21 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                   controllers.Assets.at(path="/public", file="/index.html")
+GET     /index              controllers.Assets.at(path="/public", file="/index.html")
+GET     /remote             controllers.Assets.at(path="/public", file="/remote.html")
+GET     /0.1             	controllers.Assets.at(path="/public/javascripts", file="/app.min.js")
+GET     /0.1.full          	controllers.Assets.at(path="/public/javascripts", file="/app.full.js")
+GET     /0.1.debug          controllers.Assets.at(path="/public/javascripts", file="/app.debug.js")
+POST	/getrecords			controllers.API.getrecords
+
+
+
+# Map static resources from the /public folder
+GET     /images/*file	    controllers.Assets.at(path="/public/images", file)
+GET     /stylesheets/*file	controllers.Assets.at(path="/public/stylesheets", file)
+GET     /javascripts/*file	controllers.Assets.at(path="/public/javascripts", file)
+GET     /bootstrap/*file	controllers.Assets.at(path="/public/bootstrap", file)
+GET     /easyxdm.swf        controllers.Assets.at(path="/public", file="/easyxdm.swf")
